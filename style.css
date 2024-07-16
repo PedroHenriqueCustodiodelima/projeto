@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: white;
+    color: #4CAF50;
+    padding: 1em 0;
+    border-bottom: 3px solid #0367A6;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a#entrar {
+    background-color: #0367A6;
+    color: white;
+    border-radius: 50px; /* Borda redonda */
+}
+
+nav ul li a#cadastrar {
+    color: #0367A6;
+}
+
+nav ul li.separator {
+    width: 2px;
+    height: 24px;
+    background-color: #0367A6;
+}
+
+main {
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaço entre a imagem e o texto */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-image {
+    width: 500px; /* Largura da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse o seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+.main-text {
+    font-size: 2em;
+    color: #0367A6;
+    flex: 1; /* Ocupa o espaço restante */
+    text-align: left; /* Alinha o texto à direita */
+}
+.features-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon-circle {
+    width: 30px; 
+    height: 30px; 
+    background-color: #0367A6;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-image {
+    width: 10px; 
+    height: 10px; 
+}
+
+.arrow-image {
+    width: 20px; 
+    height: 20px;
+    margin-left: auto;
+}
