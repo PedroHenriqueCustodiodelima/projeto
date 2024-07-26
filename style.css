@@ -6,19 +6,20 @@ body {
 }
 
 header {
-    background-color: white;
-    color: #4CAF50;
+    background-color: #0367A6;
+    color: #ffffff;
     padding: 1em 0;
     border-bottom: 3px solid #0367A6;
+    box-shadow: 0 4px 6px -2px rgb(105, 104, 104);
+    
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .header-left {
@@ -40,7 +41,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 0.5px; 
 }
 
 nav ul li a {
@@ -52,73 +53,43 @@ nav ul li a {
 nav ul li a#entrar {
     background-color: #0367A6;
     color: white;
-    border-radius: 50px; /* Borda redonda */
+    border-radius: 50px;
 }
 
 nav ul li a#cadastrar {
-    color: #0367A6;
+    color: #ffffff;
 }
 
 nav ul li.separator {
     width: 2px;
     height: 24px;
-    background-color: #0367A6;
+    background-color: #ffffff;
+}
+
+.perfil {
+    width: 30px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 2px; 
 }
 
 main {
+    display: flex;
+    height: calc(100vh - 100px); 
+}
+
+.main-left {
+    flex: 0 0 15%; 
     padding: 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #d8d8d8; 
+    height: 100%; 
 }
 
-.main-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Espaço entre a imagem e o texto */
-    max-width: 900px;
-    margin: 0 auto;
+.main-right {
+    flex: 0 0 85%; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.main-image {
-    width: 500px; /* Largura da imagem */
-    max-width: 100%; /* Garante que a imagem não ultrapasse o seu contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-right: 20px; /* Espaço à direita da imagem */
-}
 
-.main-text {
-    font-size: 2em;
-    color: #0367A6;
-    flex: 1; /* Ocupa o espaço restante */
-    text-align: left; /* Alinha o texto à direita */
-}
-.features-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.features-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.icon-circle {
-    width: 30px; 
-    height: 30px; 
-    background-color: #0367A6;
-    border-radius: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-image {
-    width: 10px; 
-    height: 10px; 
-}
-
-.arrow-image {
-    width: 20px; 
-    height: 20px;
-    margin-left: auto;
-}
